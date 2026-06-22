@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迷因詪 - 迷因分享平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎭 迷因詪</h1>
+            <p>歡迎來到迷因分享平台</p>
+        </header>
+
+        <main>
+            <!-- 新增迷因區 -->
+            <section class="add-section">
+                <h2>分享一個新迷因</h2>
+                <form id="memeForm">
+                    <div class="form-group">
+                        <label for="title">標題：</label>
+                        <input type="text" id="title" name="title" required placeholder="迷因標題">
+                    </div>
+                    <div class="form-group">
+                        <label for="content">內容：</label>
+                        <textarea id="content" name="content" required placeholder="迷因描述或文字"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="imageUrl">圖片URL：</label>
+                        <input type="url" id="imageUrl" name="imageUrl" placeholder="https://example.com/image.jpg">
+                    </div>
+                    <button type="submit" class="btn-submit">分享迷因</button>
+                </form>
+            </section>
+
+            <!-- 迷因列表區 -->
+            <section class="meme-section">
+                <h2>迷因庫</h2>
+                <div id="memeList" class="meme-list">
+                    <p class="loading">載入中...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 迷因詪 - 讓生活充滿歡笑 😄</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
